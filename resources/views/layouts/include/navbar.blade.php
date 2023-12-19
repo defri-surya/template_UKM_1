@@ -4,7 +4,11 @@
             $data = App\Profile::first();
         @endphp
         <a class="navbar-brand brand-logo" href="{{ route('home') }}" style="width: 35px">
-            <img src="{{ asset($data->logo) }}">
+            @if ($data->logo === null)
+                <img src="{{ asset('front') }}/noimage.png">
+            @else
+                <img src="{{ asset($data->logo) }}">
+            @endif
         </a>
         <a class="navbar-brand brand-logo-mini" href="{{ route('home') }}"></a>
     </div>

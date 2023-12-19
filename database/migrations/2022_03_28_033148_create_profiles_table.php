@@ -21,7 +21,6 @@ class CreateProfilesTable extends Migration
             $table->string('phone');
             $table->text('deskripsi');
             $table->text('alamat');
-            $table->string('video')->nullable();
             $table->timestamps();
         });
     }

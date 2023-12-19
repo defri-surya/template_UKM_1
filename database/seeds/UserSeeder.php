@@ -15,16 +15,16 @@ class UserSeeder extends Seeder
     {
         DB::table('users')->insert([
             [
-            'name' => 'Admin',
-            'email'=> 'admin@mail.com',
-            'role' => 'superadmin',
-            'password' => Hash::make('password'),
+                'name' => 'Admin',
+                'email' => 'admin@mail.com',
+                'role' => 'superadmin',
+                'password' => Hash::make('password'),
             ],
             [
-            'name' => 'Paketdua',
-            'email' => 'paketdua@mail.com',
-            'role' => 'paketdua',
-            'password' => Hash::make('password'),
+                'name' => 'Paketdua',
+                'email' => 'paketdua@mail.com',
+                'role' => 'paketdua',
+                'password' => Hash::make('password'),
             ]
         ]);
 
@@ -34,35 +34,6 @@ class UserSeeder extends Seeder
             'nama' => 'PT KALA CITRA NUSWANTARA',
             'email' => 'ukm@gmail.com',
             'phone' => '62858989082',
-            'video' => 'www.youtube.com',
-            'ytb' => 'www.youtube.com',
-            'fb' => 'www.facebook.com',
-            'ig' => 'www.instagram.com',
-            'tiktok' => 'www.tiktok.com',
         ]);
-
-       
     }
-
-    //asli
-    // public function run()
-    // {
-    //     DB::table('users')->insert([
-    //         'name' => 'Admin',
-    //         'email' => 'admin@mail.com',
-    //         'password' => Hash::make('password'),
-    //     ]);
-
-    //     DB::table('profiles')->insert([
-    //         'alamat' => 'Jl. Garuda No.18 B, Pelem Mulong, Banguntapan, Kec. Banguntapan, Kabupaten Bantul, Daerah Istimewa Yogyakarta 55198',
-    //         'email' => 'ukm@gmail.com',
-    //         'phone' => '62858989082',
-    //         'video' => 'www.youtube.com',
-    //         'ytb' => 'www.youtube.com',
-    //         'fb' => 'www.facebook.com',
-    //         'ig' => 'www.instagram.com',
-    //     ]);
-
-       
-    // }
 }
