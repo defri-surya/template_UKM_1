@@ -52,7 +52,7 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link {{ Request::is('link*') ? 'active' : '' }}" href="{{ route('link.index') }}">
-                    <span class="menu-title">Link </span>
+                    <span class="menu-title">Link Marketplace</span>
                     <i class="mdi mdi-receipt menu-icon"></i>
                 </a>
             </li>
